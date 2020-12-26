@@ -1,0 +1,187 @@
+.link-icon {
+    height: 48px;
+    width: 48px;
+}
+
+.footer {
+    padding: 40px;
+    background-color: #AA0601;
+    color: white;
+
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .footer-links {
+            display: flex;
+            font-size: $fsz-s;
+            .footer-link {
+                margin-right: 48px;
+            }
+        }
+        
+        .media-links {
+            display: flex;
+            .media-link {
+                margin-left: 32px;
+            }
+        }
+    }
+    .contact-section {
+        margin-bottom: 30px;
+        .contact-links {
+            font-size: $fsz-l;
+        
+            .contact-link {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .contact-info {
+                    margin-left: 16px;
+                }
+            }
+            
+        }
+        .media-links {
+            display: none;
+        }
+    }
+    
+    .policy-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .copyright-section {
+            display: flex;
+            align-items: center;
+            .copyright {
+                margin-left: 38px;
+            }
+        }
+        .policy-links {
+            // margin-top: 24px;
+            display: flex;
+            align-items: center;
+    
+            .policy-link {
+                margin-left: 60px;
+
+                .logo {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media(max-width: 768px){
+    .link-icon {
+        height: 24px;
+        width: 24px;
+    }
+    .footer {
+        .footer-menu {
+            .media-links {
+                .media-link {
+                    margin-left: 24px;
+                }
+            }
+        }
+        .contact-section {
+            .contact-links {
+                font-size: $fsz-m;
+            }
+        }
+
+        .policy-menu {
+            .copyright-section {
+                .logo {
+                    display: none;
+                }
+                .copyright {
+                    margin-left: 0;
+                }
+            }
+            .policy-links {
+                .policy-link {
+                    margin-left: 24px;   
+                }
+            }
+            
+        }
+    }
+}
+@media(max-width: 414px){
+    .footer {
+        padding: 24px 16px;
+        .footer-menu {
+            display: none;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+    
+            .contact-links {
+                font-size: $fsz-s;
+        
+                .contact-link {
+                    margin-bottom: 8px;
+        
+                    .contact-info {
+                        margin-left: 8px;
+                    }
+                }
+            }
+            .media-links {
+                display: flex;
+                .media-link {
+                    margin-left: 24px;
+                }
+            }
+        }
+        .policy-menu {
+            flex-direction: column;
+            align-items: start;
+            .copyright-section {
+                margin-bottom: 16px;
+            }
+            .policy-links {
+                width: 100%;
+                flex-direction: column;
+                align-items: start;
+
+                .policy-link {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: 0;
+                    
+            
+                    .logo {
+                        display: inline;
+                        width: 46px;
+                        height: 28px;
+                        margin: 0;
+                    }
+                }
+                .policy-link:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    .link-icon {
+        height: 20px;
+        width: 20px;
+    }
+}

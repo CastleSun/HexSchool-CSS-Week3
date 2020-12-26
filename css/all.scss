@@ -1,0 +1,22 @@
+@import "variable";
+
+@import "header";
+@import "banner";
+@import "footer";
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.mb-2 {
+    margin-bottom: 16px;
+}
+.bottom-border {
+    border-bottom: 1px solid white;
+}
+
+
